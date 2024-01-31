@@ -1,6 +1,6 @@
 # Activity 0
 
-This is my **activity 0** which contains three prjects
+This is my **activity 0** which contains three projects
 
 
 - hello
@@ -47,3 +47,4 @@ was used to run app.ts and print the message to browser.
 The picture below shows the server running. And the comment for line code. 
 
 ![screenshop of server while running](/docs/images/serverRunning.png)
+
