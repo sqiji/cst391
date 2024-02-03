@@ -1,13 +1,19 @@
-
-import {createPool, Pool} from 'mysql';
-
+import { createPool, Pool } from "mysql";
 let pool: Pool | null = null;
 
 const initializeMySqlConnector = () => {
-    try{
+    try {
+
+        console.log(`MY_SQL_DB_HOST:${process.env.MY_SQL_DB_HOST}`);  // 127.0.0.1
+        console.log(`MY_SQL_DB_USER:${process.env.MY_SQL_DB_USER}`);  // root
+        console.log(`MY_SQL_DB_PASSWORD:${process.env.MY_SQL_DB_PASSWORD}`);  // root
+        console.log(`MY_SQL_DB_PORT:${process.env.MY_SQL_DB_PORT}`);  // 3306
+        console.log(`MY_SQL_DB_DATABASE:${process.env.MY_SQL_DB_DATABASE}`);  // music
+        console.log(`MY_SQL_DB_CONNECTION_LIMIT:${process.env.MY_SQL_DB_CONNECTION_LIMIT}`);  // 10
+
         pool = createPool({
             connectionLimit:
-                parseInt(process.env.MY_SQL_DB_CONNECTION != undefined ? process.env.MY_SQL_DB_CONNECTION : ""),
+                parseInt(process.env.MY_SQL_DB_CONNECTION_LIMIT != undefined ? process.env.MY_SQL_DB_CONNECTION_LIMIT : ""),
             port:
                 parseInt(process.env.MY_SQL_DB_PORT != undefined ? process.env.MY_SQL_DB_PORT : ""),
             host: process.env.MY_SQL_DB_HOST,
@@ -16,28 +22,27 @@ const initializeMySqlConnector = () => {
             database: process.env.MY_SQL_DB_DATABASE,
         });
 
-        console.debug('MySql Adabter Pool generated successfully');
+        console.debug('MySql Adapter Pool generated successfully');
         console.log('process.env.DB_DATABASE', process.env.MY_SQL_DB_DATABASE);
 
         pool.getConnection((err, connection) => {
-            if(err){
-                console.log('error nysql failed to connect');
+            if (err) {
+                console.log('error MySql failed to connect');
                 throw new Error('not able to connect to database');
-            }
-            else{
+            } else {
                 console.log('connection made');
                 connection.release();
             }
-        });
-    } catch (error){
+        })
+    } catch (error) {
         console.error('[mysql.connector][initializeMySqlConnector][Error]: ', error);
-        throw new Error('failed to initialized pool');
+        throw new Error('failed to initialize pool');
     }
-};
+}
 
 export const execute = <T>(query: string, params: string[] | Object): Promise<T> => {
-    try{
-        if(!pool){
+    try {
+        if (!pool) {
             initializeMySqlConnector();
         }
 
@@ -47,9 +52,9 @@ export const execute = <T>(query: string, params: string[] | Object): Promise<T>
                 else resolve(results);
             });
         });
-    } catch(error){
+
+    } catch (error) {
         console.error('[mysql.connector][execute][Error]: ', error);
-        throw new Error('Failed to execute MySQL query');
+        throw new Error('failed to execute MySQL query');
     }
 };
-

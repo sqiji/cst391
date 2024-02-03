@@ -1,11 +1,9 @@
-import {Request, Response, RequestHandler} from 'express';
+import { Request, RequestHandler, Response } from 'express';
 import { Album } from './albums.model';
-import { Track } from '../tracks/tracks.model';
-import * as AlbumDao from './albums.dao';
+import { Track } from './../tracks/tracks.model';
+import * as AlbumDao from '../albums/albums.dao';
 import * as TracksDao from '../tracks/tracks.dao';
 import { OkPacket } from 'mysql';
-
-
 
 export const readAlbums: RequestHandler = async (req: Request, res: Response) => {
     try {
@@ -15,8 +13,7 @@ export const readAlbums: RequestHandler = async (req: Request, res: Response) =>
         console.log('albumId', albumId);
         if (Number.isNaN(albumId)) {
             albums = await AlbumDao.readAlbums();
-        } 
-        else {
+        } else {
             albums = await AlbumDao.readAlbumsByAlbumId(albumId);
         }
         await readTracks(albums, res);
@@ -169,5 +166,6 @@ async function readTracks(albums: Album[], res: Response<any, Record<string, any
     }
 
 };
+
 
 

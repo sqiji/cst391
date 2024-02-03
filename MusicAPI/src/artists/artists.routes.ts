@@ -1,5 +1,5 @@
-import { Router } from 'express';
-import * as ArtistsController from './artists.controller';
+import { Request, Response, Router } from 'express';
+import * as ArtistsController from './artists.controllers';
 
 const router = Router();
 router
