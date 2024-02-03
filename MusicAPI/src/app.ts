@@ -18,13 +18,13 @@ import cors from 'cors';
 import helmet from 'helmet';
 
 //Calling Envirement Variable configration
-dotenv.config({path: "../.env"}); 
+dotenv.config(); 
 
 //Declare and initialize insstance of express
 const app = express();
 
 //Declare and initialize port namber
-const port = 3000;
+const port = process.env.PORT;
 
 //Enable all CORS request
 app.use(cors());
@@ -37,6 +37,8 @@ app.use(express.json());
 
 //Parse URL-encoded bodies
 app.use(express.urlencoded({extended: true}));
+
+console.log(process.env.MY_SQL_DB_HOST);
 
 if (process.env.NODE_ENV == 'development'){
     //Add logger middleware 
