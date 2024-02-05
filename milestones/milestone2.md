@@ -1,10 +1,10 @@
  
 ###### Soran Qiji 
 ###### CST-391 
-###### Milestone 1 
-###### 01/22/2024 
+###### Milestone 2 
+###### 02/4/2024 
 
-# Milestone 1 project proposal: 
+# Milestone 2: 
 
 This applica on demonstrates the web app the user post item for sell on it, something like Craigslis.org. 
 The user will be able to add an item to the website by providing product details like name, model, piece, descrip on, picture, and user email address for contact. 
