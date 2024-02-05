@@ -27,9 +27,9 @@
 
 #### Recording
 
-![Video1](https://www.loom.com/share/f75d44c8f4db4f68a00b306c5adf7139?sid=abd1a3f1-8d8f-40d4-8702-a2e688a08b44)
+- Video1: https://www.loom.com/share/f75d44c8f4db4f68a00b306c5adf7139?sid=abd1a3f1-8d8f-40d4-8702-a2e688a08b44
 
-![Video2](https://www.loom.com/share/bdcfd911184648d29cfe18a8ed805be7?sid=18a5f1d2-dece-4c0f-8ef1-fc582cf0235c)
+- Video: https://www.loom.com/share/bdcfd911184648d29cfe18a8ed805be7?sid=18a5f1d2-dece-4c0f-8ef1-fc582cf0235c
 
 - This is the vidoe of the Music API while running showing the web pages and the postman.
 
