@@ -4,15 +4,15 @@ export const carQueries = {
 
 	searchCarsByMake:
 		`select id as carId, make as make, model as model, year as year, color as color, image as image from cardb.cars
-		where carDB.cars.Make like ?`,
+		where cardb.cars.Make like ?`,
 
 	searchCarsByModel:
 		`select id as carId, make as make, model as model, year as year, color as color, image as image from cardb.cars
-		where carDB.cars.Model like ?`,
+		where cardb.cars.Model like ?`,
 
 	readCarsByCarID:
 		`select id as carId, make as make, model as model, year as year, color as color, image as image from cardb.cars
-		where carDB.cars.ID = ?`,
+		where cardb.cars.id = ?`,
 	
 	createNewCar:
 		`insert into cars(make, model, year, color, image) values(?,?,?,?,?)`,

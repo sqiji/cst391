@@ -1,8 +1,5 @@
 import { Request, RequestHandler, Response } from 'express';
-import { Car } from './cars.model';
-//import { Track } from '../tracks/tracks.model';
 import * as CarDao from '../cars/cars.dao';
-//import * as TracksDao from '../tracks/tracks.dao';
 import { OkPacket } from 'mysql';
 
 export const readCars: RequestHandler = async (req: Request, res: Response) => {
@@ -13,9 +10,7 @@ export const readCars: RequestHandler = async (req: Request, res: Response) => {
         console.log('carId', carId);
         if (Number.isNaN(carId)) {
             cars = await CarDao.readCars();
-            res.status(200).json(
-                cars
-            );
+            
         } else {
             cars = await CarDao.readCarsByCarID(carId);
         }
