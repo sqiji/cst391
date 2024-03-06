@@ -36,3 +36,6 @@ In part a front end for the music app was created. The user can create a new alb
 
 ![screen5](../activity3/activity3screenshots/m7.png)
 - This screen shows the alert message, which is diaplayed by clicking About button on the nav bar.
+
+
+
