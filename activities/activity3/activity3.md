@@ -7,19 +7,19 @@
 
 #### Part 1 Screenshots:
 
-![screen1](../activity3/activity3screenshots/1.png)
+![screen1](../activity3/activity3screenshot/1.png)
 - This screen shows the PC size webpage after using ng serve --o to run the app. 
 
-![screen1](../activity3/activity3screenshots/2.png)
+![screen1](../activity3/activity3screenshot/2.png)
 - This screen shows the responsive of webpage for different screen size which here iPhone 12 pro was demonstrated. 
 
-![screen3](../activity3/activity3screenshots/3.png)
+![screen3](../activity3/activity3screenshot/3.png)
 - This screen shows the web pade of application at first run and before the name was entred.
 
-![screen4](../activity3/activity3screenshots/4.png)
+![screen4](../activity3/activity3screenshot/4.png)
 - This screen shows the page after the user enters their name.
 
-![screen5](../activity3/activity3screenshots/5.png)
+![screen5](../activity3/activity3screenshot/5.png)
 - This screen shows after the user clicked the Buy button with the Dev tools with quantity and product.
 
 ### Research Questions:
@@ -38,19 +38,19 @@ In part a front end for the music app was created. The user can create a new alb
 
 #### Par2 Screenshots
 
-![screen1](../activity3/activity3screenshots/m1.png)
+![screen1](../activity3/activity3screenshot/m1.png)
 - This screen shows the web app when run for the first time, with welcome message and nave bar.
 
-![screen2](../activity3/activity3screenshots/m2.png)
+![screen2](../activity3/activity3screenshot/m2.png)
 - this is a home page for Grand Canyon Univeristy which can be access by clicking GCU Home Page on nav bar.
 
-![screen3](../activity3/activity3screenshots/m3.png)
+![screen3](../activity3/activity3screenshot/m3.png)
 - The screen shows the page that uses to create a new album, which after providing the album information and clicking the submit button the album will be created and added to list.
 
-![screen4](../activity3/activity3screenshots/m6.png)
+![screen4](../activity3/activity3screenshot/m6.png)
 - This screen shows the album that was added recently, Lit it Be is the new album that was added to the list.
 
-![screen5](../activity3/activity3screenshots/m7.png)
+![screen5](../activity3/activity3screenshot/m7.png)
 - This screen shows the alert message, which is diaplayed by clicking About button on the nav bar.
 
 
