@@ -7,14 +7,30 @@
 
 #### Part 1 Screenshots:
 
-![screen1](../activity3/activity3screenshots/1.PNG)
+![screen1](../activity3/activity3screenshots/1.png)
 - This screen shows the PC size webpage after using ng serve --o to run the app. 
 
 ![screen1](../activity3/activity3screenshots/2.png)
 - This screen shows the responsive of webpage for different screen size which here iPhone 12 pro was demonstrated. 
 
+![screen3](../activity3/activity3screenshots/3.png)
+- This screen shows the web pade of application at first run and before the name was entred.
+
+![screen4](../activity3/activity3screenshots/4.png)
+- This screen shows the page after the user enters their name.
+
+![screen5](../activity3/activity3screenshots/5.png)
+- This screen shows after the user clicked the Buy button with the Dev tools with quantity and product.
+
 ### Research Questions:
-1- gi
+#### 1- Describe @Input decorator used in info.component.ts
+- The @Input decorator tells the infoComponent that it needs to get the value of 'name' from the shopComponent. The shopComponent assigns that value from the form submission in shop.component.html. In the infoComponent view, is checking if the ansewr is not unkoun, which mean that the user enterd their mame by using the *ngIf, therefore, the label and app-info will be displayed.
+
+#### 2- Describe [value] used in info.component.html
+- This is used in the option tag inside the select tag. The select tag creates a dropdown list. This [value] is used to get the current 'product' that is showing in the dropdown list. When the form is submitted, this current 'product' will be the one that is assigned to the 'selectedProduct'.
+
+#### 3- Describe [(ngModel)] also used in info.component.html
+- This is used to establish a 2-way data binding. It binds the selected value of 'product' to the 'selectedProduct' property.
 
 ### Part 2
 In part a front end for the music app was created. The user can create a new album, display the album in database by clicking on Arts List and chosse the Artis name which will display all its albums.
