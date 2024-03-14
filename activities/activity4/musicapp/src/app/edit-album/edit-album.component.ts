@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { MusicServiceService} from '../service/music-service.service';
-import { Album } from '../models/Album';
+import { Album } from '../models/albums.model';
 
 @Component({
   selector: 'app-edit-album',
@@ -11,7 +11,15 @@ import { Album } from '../models/Album';
 })
 export class EditAlbumComponent implements OnInit
 {
-  album!:Album;
+  album: Album = {
+	  albumId: Math.floor(Math.random() * 1000000),
+	  title: "",
+	  artist: "",
+	  description: "",
+	  year: "",
+	  image: "",
+	  tracks: [],
+	};
   tracksRaw:string = "";
   wasSubmitted:boolean = false;
 
@@ -23,8 +31,8 @@ export class EditAlbumComponent implements OnInit
     console.log("The ID is " + id);
     console.log("The Artist is " + artist);
     
-/*
-    this.service.getAlbum(artist, id, (album:Album) => {
+
+    /*this.service.getAlbum(artist, id, (album:Album) => {
       this.album = album;
       for(let x=0;x < this.album.Tracks.length;++x)
       {
@@ -35,9 +43,9 @@ export class EditAlbumComponent implements OnInit
           this.tracksRaw = this.tracksRaw + ';' + this.album.Tracks[x].Video;
         this.tracksRaw = this.tracksRaw + '\n';
       }
-    });
+    });*/
     
-*/
+
   }
 
   public onCancel() {

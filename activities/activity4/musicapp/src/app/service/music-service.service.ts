@@ -1,8 +1,13 @@
 import { Injectable } from '@angular/core';
-import exampledata from '../../data/sample-music-data.json';
+import exampledata  from '../../data/sample-music-data.json';
 import { Artist } from './../models/artists.model';
 import { Album } from '../models/albums.model';
 import { HttpClient } from '@angular/common/http';
+import { Track } from '../models/Track';
+
+
+
+
 
 /**
  * The below class is used to send data correctly to the angular application's webpage to display.
@@ -66,5 +71,16 @@ export class MusicServiceService {
       callback(albums);
     });
   }
-  
+
+
+  /*public getAlbum(artist: string, id: number): Album | undefined {
+		const album = this.albums.find((a) => a.artist === artist && a.albumId === id);
+
+		if (album) {
+			const newTracks = album.tracks.map((track) => new Track(track.trackId, track.number, track.title, track.lyrics, track.video));
+			return new exampledata(album.albumId, album.title, album.artist, album.description, album.year, album.image, newTracks);
+		}
+
+		return undefined;
+	}*/
 }
