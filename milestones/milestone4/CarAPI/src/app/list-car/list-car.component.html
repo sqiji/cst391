@@ -1,0 +1,15 @@
+
+
+<div class="list-group">
+    <h1 align="center"> Cars</h1>
+    <table>
+      <tr *ngFor="let car of cars">
+          <td width="50px" align="center">{{ car.carId }} </td>
+          <td width="50px" align="left">{{ car.make }} </td>
+          <td width="50px" align="left"> {{ car.model }}</td>
+          <td width="50px" align="left"> {{ car.year }}</td>
+          <td width="50px" align="left"> {{ car.color }}</td>
+          <td width="50px" align="left"> {{ car.image }}</td>
+      </tr>
+  </table>
+  </div>
