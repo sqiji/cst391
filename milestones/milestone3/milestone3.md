@@ -30,7 +30,7 @@
 
 #### Screenshots
 
-![Screen2](/milestones/milestone3/milestone3Images/1.png)
+![Screen2](../milestone3/milestone3Images/1.png)
 
 - This screen shows the welcome message of the Car Show API when the user open the web page using localhost:5000.
 
