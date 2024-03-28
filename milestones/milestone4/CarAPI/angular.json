@@ -3,19 +3,30 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "musicapp": {
+    "milestone4": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/musicapp",
+            "preserveSymlinks": true,
+            "outputPath": "dist/milestone4",
             "index": "src/index.html",
-            "main": "src/main.ts",
+            "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
@@ -26,6 +37,7 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.css"
+              
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
@@ -48,12 +60,9 @@
               "outputHashing": "all"
             },
             "development": {
-              "buildOptimizer": false,
               "optimization": false,
-              "vendorChunk": true,
               "extractLicenses": false,
-              "sourceMap": true,
-              "namedChunks": true
+              "sourceMap": true
             }
           },
           "defaultConfiguration": "production"
@@ -62,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "musicapp:build:production"
+              "buildTarget": "milestone4:build:production"
             },
             "development": {
-              "browserTarget": "musicapp:build:development"
+              "buildTarget": "milestone4:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "musicapp:build"
+            "buildTarget": "milestone4:build"
           }
         },
         "test": {
@@ -96,8 +105,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "f882a613-ce89-4a0a-93e0-900204ed0ddd"
   }
 }

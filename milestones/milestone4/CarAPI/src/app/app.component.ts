@@ -1,25 +1,24 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title = 'Car Show';
+  version = "1.0";
 
-  title:String = "Car Show";
-  version:String = "1.0";
+  constructor(private router: Router) {
 
-  constructor(private router: Router){}
+  }
 
-  displayVersion(){
-    alert(this.version);
-  };
+  public displayVersion() {
+    alert(" Version: " + this.version);
+  }
 
-  displayCartList(){
-    console.log("displayCarList");
-    this.router.navigate(['list-car'], { queryParams: { data: new Date()} });
-  };
+  public displayCarList() {
+    this.router.navigate(['list'], { queryParams: { data: new Date() } });
+  }
 }

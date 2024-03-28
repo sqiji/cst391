@@ -1,23 +1,28 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { CarServiceService} from '../service/car-service.service';
+import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { CarServiceService } from '../service/car-service.service';
+import { Car } from '../models/car';
 
 @Component({
   selector: 'app-delete-car',
   templateUrl: './delete-car.component.html',
   styleUrls: ['./delete-car.component.css']
 })
-export class DeleteCarComponent implements OnInit{
+export class DeleteCarComponent {
+  car: Car = new Car(0, '', '', 0, '', '');
+  wasSubmitted: boolean = false;
 
-  constructor(private route: ActivatedRoute, private service: CarServiceService) {  }
+  constructor(private service: CarServiceService) { }
 
-  ngOnInit()
-  {
-    
-    let id = Number.parseInt(this.route.snapshot.paramMap.get('id')!);
-    this.service.deleteCar(id, () => {
-            console.log("The return from deleteCar() was " + status);
-        });
+  ngOnInit() { }
+
+  public onSubmit() {
+    this.service.deleteCar(this.car.carId, this.test);
+    console.log('The return from deleteCar() was ' + status);
+    this.wasSubmitted = true;
   }
 
+  test() {
+
+  }
 }

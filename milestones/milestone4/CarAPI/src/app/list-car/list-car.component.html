@@ -1,15 +1,30 @@
 
 
-<div class="list-group">
-    <h1 align="center"> Cars</h1>
-    <table>
-      <tr *ngFor="let car of cars">
-          <td width="50px" align="center">{{ car.carId }} </td>
-          <td width="50px" align="left">{{ car.make }} </td>
-          <td width="50px" align="left"> {{ car.model }}</td>
-          <td width="50px" align="left"> {{ car.year }}</td>
-          <td width="50px" align="left"> {{ car.color }}</td>
-          <td width="50px" align="left"> {{ car.image }}</td>
-      </tr>
-  </table>
-  </div>
+
+<div class="list-group-item" *ngIf="selectedCar == null" style="margin-left: 20%; margin-right: 20%;margin-top: 5%;">
+    
+ 
+      <table class="table table-success table-striped" align="center">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Make</th>
+                <th scope="col">Model</th>
+                <th scope="col">Year</th>
+                <th scope="col">Color</th>
+                <th scope="col">Image</th>
+            </tr>
+        </thead>
+        <tbody active *ngFor="let car of cars">
+            <tr>
+                <td style="padding-top: 25px;"> {{ car.carId }}</td>
+                <td style="padding-top: 25px;"> {{ car.make }}</td>
+                <td style="padding-top: 25px;"> {{ car.model }}</td> 
+                <td style="padding-top: 25px;"> {{car.year}}</td> 
+                <td style="padding-top: 25px;"> {{car.color}}</td>
+                <td width="20%"><a href="{{car.image}}" target="_blank"><img src="{{ car.image }}" width="100px" height="60px"></a></td>
+            </tr>
+        </tbody>
+      </table>
+   
+</div>

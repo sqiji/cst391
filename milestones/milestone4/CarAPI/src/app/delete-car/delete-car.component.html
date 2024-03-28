@@ -1,1 +1,22 @@
-<h1>car was deleted!</h1>
+
+<h1 align="center"> Removing car from car list</h1>
+<div class="form-container" *ngIf="!wasSubmitted" style="width: 50%; margin-left: 25%;">
+  <fieldset enable>
+    <legend>Enter ID for the car that need to be removed</legend>
+  <form (ngSubmit)="onSubmit()" #createForm="ngForm">
+      <div class="form-group mb-3">
+          <label for="carId" class="form-label" style="font-weight: bold;">ID</label> 
+          <input id="carId" type="text" class="form-control form-label"
+              aria-describedby="helpID" placeholder="ID" required
+              [(ngModel)]="car.carId" name="carId">
+      </div>
+    
+        <button type="submit" class="btn btn-danger">Remove</button>
+    </form>
+    </fieldset>
+</div>
+
+<div *ngIf="wasSubmitted">
+    <h3 align="center">Car was removerd successfully.</h3>    
+</div>
+

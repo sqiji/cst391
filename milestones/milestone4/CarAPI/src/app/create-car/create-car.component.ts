@@ -1,16 +1,14 @@
-import { Component } from '@angular/core';
-import { CarServiceService } from '../service/car-service.service';
+import { Component, NgModule, OnInit } from '@angular/core';
 import { Car } from '../models/car';
+import { CarServiceService } from '../service/car-service.service';
 
 @Component({
   selector: 'app-create-car',
   templateUrl: './create-car.component.html',
   styleUrls: ['./create-car.component.css']
 })
-export class CreateCarComponent {
-
-  car: Car = new Car(Math.floor(Math.random() * 1000000), '', '', '', '', '');
-
+export class CreateCarComponent implements OnInit{
+  car: Car = new Car(Math.floor(Math.random() * 1000000), '', '', 0, '', '');
   wasSubmitted: boolean = false;
 
   constructor(private service: CarServiceService) { }
@@ -18,17 +16,12 @@ export class CreateCarComponent {
   ngOnInit() { }
 
   public onSubmit() {
-
-    this.service.createCar(this.car, ()=>{
-      console.log("Created Car");
-      });
-    
-      this.wasSubmitted = true;
-  
-
-    // this.service.createCar(this.car, this.test);
-    // console.log('The return from createPrayer() was ' + status);
-    // this.wasSubmitted = true;
+    this.service.createCar(this.car, this.test);
+    console.log('The return from createPrayer() was ' + status);
+    this.wasSubmitted = true;
   }
 
+  test() {
+
+  }
 }

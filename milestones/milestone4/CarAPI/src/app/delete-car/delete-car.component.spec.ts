@@ -6,12 +6,10 @@ describe('DeleteCarComponent', () => {
   let component: DeleteCarComponent;
   let fixture: ComponentFixture<DeleteCarComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ DeleteCarComponent ]
-    })
-    .compileComponents();
-
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [DeleteCarComponent]
+    });
     fixture = TestBed.createComponent(DeleteCarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

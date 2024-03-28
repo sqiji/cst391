@@ -1,6 +1,6 @@
 [
     {
-      "carId": 1,
+      "id": 1,
       "make": "KIA",
       "model": "Sorento",
       "year": "2000",
@@ -8,7 +8,7 @@
       "image": ""
     },
     {
-      "carId": 1,
+      "id": 2,
       "make": "KIA",
       "model": "Sorento",
       "year": "2000",
@@ -16,7 +16,7 @@
       "image": ""
     },
     {
-      "carId": 1,
+      "id": 3,
       "make": "KIA",
       "model": "Sorento",
       "year": "2000",
@@ -24,7 +24,7 @@
       "image": ""
     },
     {
-      "carId": 1,
+      "id": 4,
       "make": "KIA",
       "model": "Sorento",
       "year": "2000",

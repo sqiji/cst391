@@ -1,1 +1,50 @@
-<p>edit-car works!</p>
+<h1 align="center"> Car Updating</h1>
+<div class="form-container" *ngIf="!wasSubmitted" style="width: 50%; margin-left: 25%;">
+  <fieldset enable>
+    <legend>Updata the field with new info</legend>
+  <form (ngSubmit)="onSubmit()" #createForm="ngForm">
+    <div class="form-group mb-3">
+      <label for="id" class="form-label" style="font-weight: bold;">ID</label> 
+      <input id="id" type="text" class="form-control form-label"
+          aria-describedby="helpId" placeholder="ID" required
+          [(ngModel)]="car.carId" name="carId">
+  </div>
+      <div class="form-group mb-3">
+          <label for="make" class="form-label" style="font-weight: bold;">Make</label> 
+          <input id="make" type="text" class="form-control form-label"
+              aria-describedby="helpMake" placeholder="make" required
+              [(ngModel)]="car.make" name="make">
+      </div>
+      <div class="form-group mb-3">
+        <label for="model" class="form-label" style="font-weight: bold;">Model</label> 
+        <input id="model" type="text" class="form-control form-label"
+            aria-describedby="helpModel" placeholder="model" required
+            [(ngModel)]="car.model" name="model">
+      </div>
+      <div class="form-group mb-3">
+        <label for="year" class="form-label" style="font-weight: bold;">Year</label> 
+        <input id="year" type="text" class="form-control form-label"
+            aria-describedby="helpYear" placeholder="year" required
+            [(ngModel)]="car.year" name="year">
+      </div>
+      <div class="form-group mb-3">
+        <label for="color" class="form-label" style="font-weight: bold;">Color</label> 
+        <input id="color" type="text" class="form-control form-label"
+            aria-describedby="helpColor" placeholder="color" required
+            [(ngModel)]="car.color" name="color">
+      </div>
+      <div class="form-group mb-3">
+        <label for="image" class="form-label" style="font-weight: bold;">Image</label> 
+        <input id="image" type="text" class="form-control form-label"
+            aria-describedby="helpImage" placeholder="image" required
+            [(ngModel)]="car.image" name="image">
+      </div>
+      <br>
+      <button type="submit" class="btn btn-warning">Update</button>
+    
+  </form>
+</fieldset>
+</div>
+<div *ngIf="wasSubmitted">
+  <h3 align="center">Car was updayed successfully.</h3>
+</div>
