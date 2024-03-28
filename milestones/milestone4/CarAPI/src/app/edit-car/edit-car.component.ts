@@ -17,7 +17,6 @@ export class EditCarComponent {
 
   public onSubmit() {
     this.service.updateCar(this.car, this.test);
-    console.log('The return from updateCar() was ' + status);
     this.wasSubmitted = true;
   }
 

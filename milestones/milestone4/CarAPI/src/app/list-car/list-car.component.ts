@@ -14,10 +14,8 @@ export class ListCarComponent {
   constructor(private route: ActivatedRoute, private service: CarServiceService) { }
 
   ngOnInit() {
-    console.log("Getting data ....");
     this.service.getCar((cars: Car[]) => {
       this.cars = cars;
-      console.log('this.cars', this.cars);
       for (let i = 0; i < cars.length; i++) {
         this.cars[i].Make = String(Object.values(cars[i]));
       }

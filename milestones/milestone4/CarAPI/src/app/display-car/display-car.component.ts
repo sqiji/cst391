@@ -17,10 +17,7 @@ export class DisplayCarComponent {
 	constructor(private route: ActivatedRoute, private service: CarServiceService) {
 	  // Access route parameters
 	  this.route.params.subscribe(params => {
-		// Access the 'id' parameter
 		let carId = parseInt(params['id']);
-		console.log("carId: " + carId)
-		// this.album = this.service.getAlbumById(albumId);
   
 		this.service.getCarById(carId, (car: Car[])=>{
 		  car: car[0];

@@ -17,7 +17,6 @@ export class CreateCarComponent implements OnInit{
 
   public onSubmit() {
     this.service.createCar(this.car, this.test);
-    console.log('The return from createPrayer() was ' + status);
     this.wasSubmitted = true;
   }
 

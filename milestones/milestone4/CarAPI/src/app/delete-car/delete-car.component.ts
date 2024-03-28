@@ -18,7 +18,6 @@ export class DeleteCarComponent {
 
   public onSubmit() {
     this.service.deleteCar(this.car.carId, this.test);
-    console.log('The return from deleteCar() was ' + status);
     this.wasSubmitted = true;
   }
 
