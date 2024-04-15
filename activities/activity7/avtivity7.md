@@ -12,7 +12,7 @@
 - The nav bar does not work as a drop list when resize the window to small size window
 - After applying search the main in nav bar does not respond, it does not navigate the user to main.
 
-#### Screenshots:
+### Screenshots:
 
 ![screen 1](./images/main.png)
 - This screen shows the main page that display all albums.
