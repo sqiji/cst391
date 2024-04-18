@@ -14,7 +14,7 @@ const AlbumList = (props) => {
     const albums = props.albumList.map((album) => {
         return(
             <Card 
-                key={album.albumId + 1}
+                key={album.albumId}
                 albumId={album.albumId}
                 albumTitle={album.title}
                 albumDescription={album.description}
