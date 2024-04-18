@@ -25,12 +25,12 @@ export const readCarsByCarID = async (carId: number) => {
 
 export const createNewCar = async (car: Car) => {
     return execute<OkPacket>(carQueries.createNewCar,
-        [car.make, car.model, car.year, car.color, car.image]);
+        [car.make, car.model, car.year, car.color, car.price, car.image]);
 };
 
 export const updateCar = async (car: Car) => {
     return execute<OkPacket>(carQueries.updateCar,
-        [car.make, car.model, car.year, car.color, car.image, car.carId]);
+        [car.make, car.model, car.year, car.color, car.price, car.image, car.carId]);
 };
 
 export const deleteCar = async (carId: number) => {
