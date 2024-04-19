@@ -10,8 +10,8 @@
 |Milestone 1|Project Proposal|[milestone1](https://github.com/sqiji/cst391/blob/main/milestones/milestone1/milestone1.md)
 |Milestone 2|Refined Project Proposal|[milestone2](https://github.com/sqiji/cst391/blob/main/milestones/milestone2/milestone2.md)
 |Milestone 3|Rest API using Express Framework|[Milestone3](https://github.com/sqiji/cst391/blob/main/milestones/milestone3/milestone3.md)
-|Milestone 4|Angular Application|milestones/[Milestone4](https://github.com/sqiji/cst391/blob/main/milestones/milestone4/milestone4.md)
-|Milestone 5|React Front-End|milestones/[Milestone5](https://github.com/sqiji/cst391/blob/main/milestones/milestone5/milestone5.md)
+|Milestone 4|Angular Application|[Milestone4](https://github.com/sqiji/cst391/blob/main/milestones/milestone4/milestone4.md)
+|Milestone 5|React Front-End|[Milestone5](https://github.com/sqiji/cst391/blob/main/milestones/milestone5/milestone5.md)
 
 
 ### Descriptions:
