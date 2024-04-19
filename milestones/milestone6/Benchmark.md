@@ -7,11 +7,11 @@
 
 |Milestone|Description|Link|
 |--|--|--
-|Milestone 1|Project Proposal|milestones/milestone1
-|Milestone 2|Refined Project Proposal|milestones/milestone2
-|Milestone 3|Rest API using Express Framework|milestones/milestone3
-|Milestone 4|Angular Application|milestones/milestone4
-|Milestone 5|React Front-End|milestones/milestone5
+|Milestone 1|Project Proposal|[milestone1](https://github.com/sqiji/cst391/blob/main/milestones/milestone1/milestone1.md)
+|Milestone 2|Refined Project Proposal|[milestone2](https://github.com/sqiji/cst391/blob/main/milestones/milestone2/milestone2.md)
+|Milestone 3|Rest API using Express Framework|[Milestone3](https://github.com/sqiji/cst391/blob/main/milestones/milestone3/milestone3.md)
+|Milestone 4|Angular Application|milestones/[Milestone4](https://github.com/sqiji/cst391/blob/main/milestones/milestone4/milestone4.md)
+|Milestone 5|React Front-End|milestones/[Milestone5](https://github.com/sqiji/cst391/blob/main/milestones/milestone5/milestone5.md)
 
 
 ### Descriptions:
@@ -29,3 +29,7 @@
 
 ### Milestone 5:
 - This is milestone is the same as milestone four but was built using React insteadd of Angular. In this milestone user can display car using Card from Bootstrap. The Edit and Add new car age is desined using form, both are using the same page, the code is used to determine if it is a new car or editing and existing car, if it is editing an existing car then the fields will be felled with the car informatin and if it is a new car then the fields will use the placeholder text that are defined in HTML code.
+
+
+### Pending:
+Creare and implement User interface, that will allow the user create a username using Register Interface. then the user will be able to sing in to the web application using its own username and password to be able to add, modify, or delete a product (car) from the website. Oherwise the user will only be able to see the product (cars) only.
