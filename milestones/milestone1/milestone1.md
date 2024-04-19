@@ -71,7 +71,7 @@ The user will be able to add an item to the website by providing product details
  - This is the page were the user can log-in using the username and password after regestering which this will allow the user to add, modify, and update the item.
 
  ### Register (sing-up) page:
- ![Sign-up]images/signup.png)
+ ![Sign-up](images/signup.png)
  - This the registser page that the usre will allow to register by providing information such as first and last name, email, and password.
  
 ## Risks: 
