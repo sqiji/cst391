@@ -1,6 +1,6 @@
 # Benchmark - Milestone 6
 
-- This milestone is c
+- This benchmark is like a prsentation that contain all the milestones that were built though this course. The link for each milestone is provided in the table below with a short explanation, the links for videos are provide in the end.
 
 
 ## Milestones:
