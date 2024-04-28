@@ -33,3 +33,8 @@
 
 ### Pending:
 Creare and implement User interface, that will allow the user create a username using Register Interface. then the user will be able to sing in to the web application using its own username and password to be able to add, modify, or delete a product (car) from the website. Oherwise the user will only be able to see the product (cars) only.
+
+### Link to videos:
+- Video 1: https://www.loom.com/share/23a71117bac24d6aadcfeca49fcb2dac?sid=8cff0eea-259b-4f2f-baee-d284cc49665f
+- Video 2: https://www.loom.com/share/184f962888414d878291b7e78d41e633?sid=ccf97406-8d57-476d-afb0-f5f71171615d
+- Video 3: https://www.loom.com/share/d729218bb3ba4ef9968c80d7cf03a12b?sid=edb91c6e-00f9-4ade-bf1e-5a097d7c2147
