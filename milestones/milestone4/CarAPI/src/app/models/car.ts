@@ -4,14 +4,16 @@ export class Car {
     model: string = "";
     year: number = 1960;
     color: string = "";
+    price: number = 0.0;
     image: string = "";
 
-    constructor(carId: number, make: string, model: string, year: number, color: string, image: string){
+    constructor(carId: number, make: string, model: string, year: number, color: string, price: number, image: string){
       this.carId = carId,
       this.make = make,
       this.model = model,
       this.year = year,
       this.color = color,
+      this.price = price;
       this.image = image
     }
 
@@ -56,6 +58,14 @@ export class Car {
 
     set Color(color: string) {
       this.color = color;
+    }
+
+    get Price(): number{
+      return this.price;
+    }
+
+    set Price(price: number) {
+      this.price = price;
     }
 
     get Image(): string{

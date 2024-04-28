@@ -9,7 +9,7 @@ import { Car } from '../models/car';
   styleUrls: ['./delete-car.component.css']
 })
 export class DeleteCarComponent {
-  car: Car = new Car(0, '', '', 0, '', '');
+  car: Car = new Car(0, '', '', 0, '', 0, '');
   wasSubmitted: boolean = false;
 
   constructor(private service: CarServiceService) { }

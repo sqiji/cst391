@@ -8,7 +8,7 @@ import { CarServiceService } from '../service/car-service.service';
   styleUrls: ['./edit-car.component.css']
 })
 export class EditCarComponent {
-  car: Car = new Car(0, '', '', 0, '', '');
+  car: Car = new Car(0, '', '', 0, '', 0, '');
   wasSubmitted: boolean = false;
 
   constructor(private service: CarServiceService) { }

@@ -8,7 +8,7 @@ import { CarServiceService } from '../service/car-service.service';
   styleUrls: ['./create-car.component.css']
 })
 export class CreateCarComponent implements OnInit{
-  car: Car = new Car(Math.floor(Math.random() * 1000000), '', '', 0, '', '');
+  car: Car = new Car(Math.floor(Math.random() * 1000000), '', '', 0, '', 0, '');
   wasSubmitted: boolean = false;
 
   constructor(private service: CarServiceService) { }
